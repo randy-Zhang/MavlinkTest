@@ -16,6 +16,7 @@ class ImageViewModel: ObservableObject {
         guard let url = URL(string: urlString) else {
             return
         }
+        print("资源下载链接：\(url.absoluteString)")
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             if let error = error {
                 self?.error = String(describing: error)

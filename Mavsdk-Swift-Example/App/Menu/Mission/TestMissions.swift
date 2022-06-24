@@ -11,7 +11,7 @@ import Mavsdk
 
 
 func surveyMissionPlan(center: CLLocationCoordinate2D, gimbalPitchDeg: Float) -> Mavsdk.Mission.MissionPlan {
-    let relativeAltitudeM: Float = 40
+    let relativeAltitudeM: Float = 100
     let speedMS: Float = 4
     let isFlyThrough = false
     let loiterTimeS: Float = 1
@@ -86,7 +86,7 @@ func surveyMissionPlan(center: CLLocationCoordinate2D, gimbalPitchDeg: Float) ->
 }
 
 func surveyMissionPlanDistanceTrigger(center: CLLocationCoordinate2D) -> Mavsdk.Mission.MissionPlan {
-    let relativeAltitudeM: Float = 40
+    let relativeAltitudeM: Float = 100
     let speedMS: Float = 4
     let isFlyThrough = false
     let loiterTimeS: Float = 1
@@ -162,7 +162,7 @@ func surveyMissionPlanDistanceTrigger(center: CLLocationCoordinate2D) -> Mavsdk.
 }
 
 func perimeterMissionPlan(center: CLLocationCoordinate2D) -> Mavsdk.Mission.MissionPlan {
-    let altitudes: [Float] = [40, 60]
+    let altitudes: [Float] = [80, 100]
     let speedMS: Float = 4
     let isFlyThrough = false
     let loiterTimeS: Float = 1
@@ -307,7 +307,7 @@ func perimeterMissionPlan(center: CLLocationCoordinate2D) -> Mavsdk.Mission.Miss
 }
 
 func orbitVideoMissionPlan(center: CLLocationCoordinate2D) -> Mavsdk.Mission.MissionPlan {
-    let relativeAltitudeM: Float = 40
+    let relativeAltitudeM: Float = 100
     let speedMS: Float = 4
     let isFlyThrough = true
     let loiterTimeS: Float = .nan

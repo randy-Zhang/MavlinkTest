@@ -34,6 +34,20 @@ class MediaLibraryViewModel: ObservableObject {
             .observe(on: MainScheduler.instance)
             .subscribe { (captureInfoList) in
                 MessageViewModel.shared.message = "Count of photos \(photosRange): \(captureInfoList.count)"
+                
+                guard let photo = captureInfoList.last else {
+                    MessageViewModel.shared.message = "photo info error !!!"
+                    return
+                }
+                
+                MessageViewModel.shared.message = """
+                        photo info : fileURL => \(photo.fileURL) \n
+                        isSuccess => \(photo.isSuccess) \n
+                        timeUtcUs => \(photo.timeUtcUs) \n
+                        index => \(photo.index) \n
+                        Position => \(photo.position.latitudeDeg), \(photo.position.longitudeDeg) \n
+                        """
+                
             } onFailure: { (error) in
                 MessageViewModel.shared.message = "Error get list of \(photosRange) photos: \(error)"
             }

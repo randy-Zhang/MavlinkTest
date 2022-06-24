@@ -52,6 +52,8 @@
 		AACDDE43791EEDF873BC91BD /* DroneAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0428D078635AB5455AF1D6 /* DroneAnnotationView.swift */; };
 		AC9D85984B4ED4F791B4E44C /* TelemetryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FD2480E0AC1C8EC7007CE /* TelemetryDetailViewModel.swift */; };
 		B58B0EA47E40DF550F89D397 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683D06124EDA012151745425 /* MainView.swift */; };
+		C53854B828655861007AC335 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53854B728655860007AC335 /* ProgressHUD.swift */; };
+		C58CE641285B0584009F0DE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58CE640285B0584009F0DE2 /* Launch Screen.storyboard */; };
 		D13E9EE33D831A4E42719A9D /* TelemetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97D3BD5690E2EC20398D34 /* TelemetryView.swift */; };
 		DA6F3E1842AAE6141C33835D /* SiteScanMavsdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240779A79B2A46695E7AE4C /* SiteScanMavsdk.swift */; };
 		EA37F42CBA6CF0714845CA0E /* PipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE602615F8C4AA55DA6940BF /* PipViewModel.swift */; };
@@ -102,6 +104,8 @@
 		BE602615F8C4AA55DA6940BF /* PipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipViewModel.swift; sourceTree = "<group>"; };
 		C02B0B808DB955CF1DBA5A85 /* VideoStreamPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoStreamPlayer.h; sourceTree = "<group>"; };
 		C3AC4FE28A7CBF7132DF36DE /* Mavsdk_Swift_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mavsdk_Swift_ExampleApp.swift; sourceTree = "<group>"; };
+		C53854B728655860007AC335 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		C58CE640285B0584009F0DE2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Mavsdk-Swift-Example/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		D82C822C555B3215FEE713A1 /* TelemetryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryDetailView.swift; sourceTree = "<group>"; };
 		DA022A83A7FE2AF094CBB5F9 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		DB4FAE470CF33EB063EE5E57 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		168EE94D1F00C296E134C256 /* MAVSDK-Swift-Example */ = {
 			isa = PBXGroup;
 			children = (
+				C53854B728655860007AC335 /* ProgressHUD.swift */,
 				E2568C6542102D291890CA7B /* Assets.xcassets */,
 				BD9F1E2D1549A89626D3367A /* Info.plist */,
 				C3AC4FE28A7CBF7132DF36DE /* Mavsdk_Swift_ExampleApp.swift */,
@@ -154,6 +159,7 @@
 				CD13E686640A038ACF9778CA /* Models */,
 				7330639604086733F5C3AE57 /* Preview Content */,
 				53320AC65452F1A65E75E40B /* Views */,
+				C58CE640285B0584009F0DE2 /* Launch Screen.storyboard */,
 			);
 			path = "MAVSDK-Swift-Example";
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58CE641285B0584009F0DE2 /* Launch Screen.storyboard in Resources */,
 				1FB08494DF39D9C05A880A95 /* Assets.xcassets in Resources */,
 				A6C9511242FC1F46912B61DF /* Preview Assets.xcassets in Resources */,
 			);
@@ -439,6 +446,7 @@
 			files = (
 				3BB7230B357879EF06BD5249 /* Action.swift in Sources */,
 				40C89A33BE406D79D48A0B22 /* ActionsView.swift in Sources */,
+				C53854B828655861007AC335 /* ProgressHUD.swift in Sources */,
 				3886ED47F8A4DAEB57FD0B2B /* ActionsViewModel.swift in Sources */,
 				A856B3BAAD4E4E1633C155EE /* CameraSettingsOptionsView.swift in Sources */,
 				7F46D2AEEA2240BF81DE63C9 /* CameraSettingsView.swift in Sources */,
@@ -618,13 +626,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4J59T26Z4C;
 				INFOPLIST_FILE = "MAVSDK-Swift-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.mavlink.mavsdk.MAVSDKExample;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunshiji.MAVSDKExample;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -635,13 +646,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4J59T26Z4C;
 				INFOPLIST_FILE = "MAVSDK-Swift-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.mavlink.mavsdk.MAVSDKExample;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunshiji.MAVSDKExample;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

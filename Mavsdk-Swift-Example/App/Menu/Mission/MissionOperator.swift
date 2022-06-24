@@ -10,7 +10,18 @@ import Mavsdk
 import MapKit
 
 final class MissionOperator: ObservableObject {
+    
+    var siteScan: SiteScanMavsdk?
+    
     static let shared = MissionOperator()
+    
+//    init() {
+//        siteScan = SiteScanMavsdk()
+//    }
+
+    func subscribeToAllSiteScan() {
+        siteScan = SiteScanMavsdk()
+    }
     
     var missions: [Mission] = Mission.allCases
     var currentMissionPlan: Mavsdk.Mission.MissionPlan? {
@@ -25,9 +36,9 @@ final class MissionOperator: ObservableObject {
         }
     }
 
-    var mapCenterCoordinate = CLLocationCoordinate2D(latitude: 36.09350, longitude: 120.37236)
+    var mapCenterCoordinate = CLLocationCoordinate2D(latitude: 36.99350, longitude: 120.97236)
     @Published var missionPlanCoordinates = [CLLocationCoordinate2D]()
-    var startCoordinate = CLLocationCoordinate2D(latitude: 36.09350, longitude: 120.37236) {
+    var startCoordinate = CLLocationCoordinate2D(latitude: 36.99350, longitude: 120.97236) {
         didSet {
             updateMissionPlan()
         }
@@ -45,11 +56,21 @@ final class MissionOperator: ObservableObject {
             return
         }
         
-        startCoordinate = mapCenterCoordinate
+        subscribeToAllSiteScan()
+        
+        guard let position = siteScan?.dronePosition else {
+            MessageViewModel.shared.message = "No drone position"
+            return
+        }
+        
+        let droneCoord = CLLocationCoordinate2D(latitude: position.latitudeDeg, longitude: position.longitudeDeg)
+        
+        startCoordinate = droneCoord
         currentMission = mission
     }
     
     func updateMissionPlan() {
+        print("lat: \(startCoordinate.latitude), lon: \(startCoordinate.longitude)")
         currentMissionPlan = currentMission?.missionPlan(center: startCoordinate)
     }
     

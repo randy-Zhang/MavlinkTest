@@ -18,6 +18,14 @@ class MessageViewModel: ObservableObject {
             if newValue != MessageViewModel.placeholder {
                 allMessages.append(LogRecord(newValue))
                 print("message: \(newValue)")
+                ProgressHUD.colorAnimation = .systemBlue
+                ProgressHUD.colorProgress = .systemBlue
+                if newValue.contains("Error") {
+                    ProgressHUD.show(newValue)
+                } else {
+                    ProgressHUD.showSucceed(newValue)
+                }
+                
             }
             
             timer?.invalidate()
@@ -25,6 +33,7 @@ class MessageViewModel: ObservableObject {
                 self?.message = MessageViewModel.placeholder
             }
         }
+        
     }
 }
 
