@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AliyunLogProducer/AliyunLogProducer.framework

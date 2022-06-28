@@ -9,6 +9,7 @@ import Foundation
 import Mavsdk
 import RxSwift
 
+
 let MavScheduler = ConcurrentDispatchQueueScheduler(qos: .default)
 
 class MavsdkDrone: ObservableObject {
@@ -18,9 +19,14 @@ class MavsdkDrone: ObservableObject {
     @Published var serverStarted: Bool = false
     @Published var isConnected: Bool = false
     
+    init() {
+        LogManager.shared.requestLogConfig()
+    }
+    
     private var disposeBag = DisposeBag()
 
     func startServer(systemAddress: String) {
+        
         MavsdkDrone.isSimulator = systemAddress.contains("tcp") ? true : false
         let newDrone = Drone()
         self.systemAddress = systemAddress
@@ -57,4 +63,9 @@ class MavsdkDrone: ObservableObject {
             })
             .disposed(by: disposeBag)
     }
+    
+    
 }
+
+
+

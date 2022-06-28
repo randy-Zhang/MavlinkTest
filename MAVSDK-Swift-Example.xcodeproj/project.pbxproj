@@ -54,6 +54,8 @@
 		B58B0EA47E40DF550F89D397 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683D06124EDA012151745425 /* MainView.swift */; };
 		C53854B828655861007AC335 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53854B728655860007AC335 /* ProgressHUD.swift */; };
 		C58CE641285B0584009F0DE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58CE640285B0584009F0DE2 /* Launch Screen.storyboard */; };
+		C5D9E15A286AD0B500B1E1B7 /* DemoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D9E159286AD0B500B1E1B7 /* DemoUtils.swift */; };
+		C5D9E16C286AE9CF00B1E1B7 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D9E16B286AE9CF00B1E1B7 /* LogManager.swift */; };
 		D13E9EE33D831A4E42719A9D /* TelemetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97D3BD5690E2EC20398D34 /* TelemetryView.swift */; };
 		DA6F3E1842AAE6141C33835D /* SiteScanMavsdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240779A79B2A46695E7AE4C /* SiteScanMavsdk.swift */; };
 		EA37F42CBA6CF0714845CA0E /* PipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE602615F8C4AA55DA6940BF /* PipViewModel.swift */; };
@@ -61,6 +63,7 @@
 		F2D205B50C4F400B1FB10AE4 /* ConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8DE83DD80A01B795C8B02 /* ConnectionViewModel.swift */; };
 		F6F39556898E7B30F7318572 /* TelemetryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADEA80F5977561CE445C1F /* TelemetryViewModel.swift */; };
 		F824F9EC7F42CC417AFF1057 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E90E274164AD53D9AA26BE7 /* MapView.swift */; };
+		FFC85E210C43C6F73A7DF05B /* Pods_MAVSDK_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD31079945C27F8AE7D1C05D /* Pods_MAVSDK_Swift_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,7 @@
 		1761F6DEE403581B00100EAF /* SiteScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteScanView.swift; sourceTree = "<group>"; };
 		187FD2480E0AC1C8EC7007CE /* TelemetryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryDetailViewModel.swift; sourceTree = "<group>"; };
 		2129F4F63A0BD23EB9CB38C6 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		241CFC2304B89BE3405DF7AD /* Pods-MAVSDK_Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAVSDK_Swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2F1DE8CB7F9AB66D6D069D46 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		323A7FC4B5799DC8321A976D /* DroneAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneAnnotation.swift; sourceTree = "<group>"; };
 		3C9180647D22CEAAF1F2CF1C /* RtspClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtspClient-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -100,12 +104,15 @@
 		B59D0FFF057331D5D57BAC76 /* MAVSDK_Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAVSDK_Swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA39D1D0964502B7FCCB5357 /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewModel.swift; sourceTree = "<group>"; };
 		BD0428D078635AB5455AF1D6 /* DroneAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneAnnotationView.swift; sourceTree = "<group>"; };
+		BD31079945C27F8AE7D1C05D /* Pods_MAVSDK_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAVSDK_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9F1E2D1549A89626D3367A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE602615F8C4AA55DA6940BF /* PipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipViewModel.swift; sourceTree = "<group>"; };
 		C02B0B808DB955CF1DBA5A85 /* VideoStreamPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoStreamPlayer.h; sourceTree = "<group>"; };
 		C3AC4FE28A7CBF7132DF36DE /* Mavsdk_Swift_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mavsdk_Swift_ExampleApp.swift; sourceTree = "<group>"; };
 		C53854B728655860007AC335 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		C58CE640285B0584009F0DE2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Mavsdk-Swift-Example/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		C5D9E159286AD0B500B1E1B7 /* DemoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUtils.swift; sourceTree = "<group>"; };
+		C5D9E16B286AE9CF00B1E1B7 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogManager.swift; path = "Mavsdk-Swift-Example/Log/LogManager.swift"; sourceTree = SOURCE_ROOT; };
 		D82C822C555B3215FEE713A1 /* TelemetryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryDetailView.swift; sourceTree = "<group>"; };
 		DA022A83A7FE2AF094CBB5F9 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		DB4FAE470CF33EB063EE5E57 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
@@ -113,6 +120,7 @@
 		E1C498B1C9FD666F11358589 /* CameraSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsViewModel.swift; sourceTree = "<group>"; };
 		E2568C6542102D291890CA7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E426A2441B20CE09E7DF5CEB /* ActionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewModel.swift; sourceTree = "<group>"; };
+		E8B9153A370E08BFC1592C55 /* Pods-MAVSDK_Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAVSDK_Swift_Example.release.xcconfig"; path = "Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA2EEC22B8907F5E7AB77050 /* CameraSettingsOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsOptionsView.swift; sourceTree = "<group>"; };
 		F11A83E5A03A09B15541A691 /* VideoPlayerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUIView.swift; sourceTree = "<group>"; };
 		F66CED9A2F509B67491DF2CF /* MissionMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionMenuView.swift; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 				9A96C9930204B1CDB90A6179 /* Mavsdk in Frameworks */,
 				690C88FFB4011B363608A738 /* MavsdkServer in Frameworks */,
 				3C77B550296DDFC517864006 /* FFmpeg-iOS in Frameworks */,
+				FFC85E210C43C6F73A7DF05B /* Pods_MAVSDK_Swift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +155,19 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		08F9C33E43070B117A5E591D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				241CFC2304B89BE3405DF7AD /* Pods-MAVSDK_Swift_Example.debug.xcconfig */,
+				E8B9153A370E08BFC1592C55 /* Pods-MAVSDK_Swift_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		168EE94D1F00C296E134C256 /* MAVSDK-Swift-Example */ = {
 			isa = PBXGroup;
 			children = (
+				C5D9E158286AD0A700B1E1B7 /* Log */,
 				C53854B728655860007AC335 /* ProgressHUD.swift */,
 				E2568C6542102D291890CA7B /* Assets.xcassets */,
 				BD9F1E2D1549A89626D3367A /* Info.plist */,
@@ -171,6 +190,14 @@
 				2129F4F63A0BD23EB9CB38C6 /* VideoView.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		1D6CE9A5639E4D118BDB86EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD31079945C27F8AE7D1C05D /* Pods_MAVSDK_Swift_Example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2FF97E7AE7952EBF48194F4D /* Pip */ = {
@@ -345,11 +372,22 @@
 			path = Telemetry;
 			sourceTree = "<group>";
 		};
+		C5D9E158286AD0A700B1E1B7 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C5D9E159286AD0B500B1E1B7 /* DemoUtils.swift */,
+				C5D9E16B286AE9CF00B1E1B7 /* LogManager.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		CC2CB05775BEE2E2A503EB86 = {
 			isa = PBXGroup;
 			children = (
 				168EE94D1F00C296E134C256 /* MAVSDK-Swift-Example */,
 				B571466F62073C7FB3A01333 /* Products */,
+				08F9C33E43070B117A5E591D /* Pods */,
+				1D6CE9A5639E4D118BDB86EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -379,9 +417,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46AA6F84F0B2013BAAE4118B /* Build configuration list for PBXNativeTarget "MAVSDK_Swift_Example" */;
 			buildPhases = (
+				0DB7C66CE58C880C3BB19538 /* [CP] Check Pods Manifest.lock */,
 				DE1D23245708823B99454635 /* Sources */,
 				EEE67A0B1CED57C29DD71DF0 /* Resources */,
 				33E1D5560B81C3D335F0ADFB /* Frameworks */,
+				994EA138DF3EE8CD7050BD97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,6 +458,7 @@
 				950B5940C5F0E28AEB85A825 /* XCRemoteSwiftPackageReference "FFmpeg-iOS" */,
 				28BF20C926F10596F57C84BF /* XCRemoteSwiftPackageReference "MAVSDK-Swift" */,
 			);
+			productRefGroup = B571466F62073C7FB3A01333 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -439,6 +480,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DB7C66CE58C880C3BB19538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAVSDK_Swift_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		994EA138DF3EE8CD7050BD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAVSDK_Swift_Example/Pods-MAVSDK_Swift_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE1D23245708823B99454635 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -450,12 +533,14 @@
 				3886ED47F8A4DAEB57FD0B2B /* ActionsViewModel.swift in Sources */,
 				A856B3BAAD4E4E1633C155EE /* CameraSettingsOptionsView.swift in Sources */,
 				7F46D2AEEA2240BF81DE63C9 /* CameraSettingsView.swift in Sources */,
+				C5D9E16C286AE9CF00B1E1B7 /* LogManager.swift in Sources */,
 				24312D45DDC08F49B62E4A31 /* CameraSettingsViewModel.swift in Sources */,
 				27BC0E82C382A2C5A056BB28 /* CameraView.swift in Sources */,
 				9A1423F92FDB6E7B8FC20A41 /* CameraViewModel.swift in Sources */,
 				73240085106FC48CD7171380 /* CommLinkView.swift in Sources */,
 				7DC1FADF29B736917B37C368 /* ConnectionView.swift in Sources */,
 				F2D205B50C4F400B1FB10AE4 /* ConnectionViewModel.swift in Sources */,
+				C5D9E15A286AD0B500B1E1B7 /* DemoUtils.swift in Sources */,
 				770E88A682D4CE2220DDE9FB /* DroneAnnotation.swift in Sources */,
 				AACDDE43791EEDF873BC91BD /* DroneAnnotationView.swift in Sources */,
 				35D01C355F6CEFD8B3374DD1 /* ImagePinchToZoom.swift in Sources */,
@@ -623,6 +708,7 @@
 		};
 		B99E5081368544D9762FFFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B9153A370E08BFC1592C55 /* Pods-MAVSDK_Swift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -643,6 +729,7 @@
 		};
 		F8AB88B2C473DB95E8C14924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241CFC2304B89BE3405DF7AD /* Pods-MAVSDK_Swift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -689,8 +776,9 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/esri/MAVSDK-Swift";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.8;
+				kind = versionRange;
+				maximumVersion = 1.1.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 		950B5940C5F0E28AEB85A825 /* XCRemoteSwiftPackageReference "FFmpeg-iOS" */ = {

@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (5.6.1)
+  - AliyunLogProducer (2.3.10.2):
+    - AliyunLogProducer/Core (= 2.3.10.2)
+  - AliyunLogProducer/Core (2.3.10.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AliyunLogProducer (~> 2.3.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AliyunLogProducer
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AliyunLogProducer: 7dd415f09facd272befd937788acf6e5a8e15b39
+
+PODFILE CHECKSUM: 23734d0884de6b2e39b3e1f8cf9fb789ed8caf5d
+
+COCOAPODS: 1.11.3

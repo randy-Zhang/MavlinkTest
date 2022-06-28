@@ -14,7 +14,7 @@ func surveyMissionPlan(center: CLLocationCoordinate2D, gimbalPitchDeg: Float) ->
     let relativeAltitudeM: Float = 100
     let speedMS: Float = 4
     let isFlyThrough = false
-    let loiterTimeS: Float = 1
+    let loiterTimeS: Float = 0
     
     var missionItems = [Mavsdk.Mission.MissionItem]()
     var currentLocation = computeLocation(center, 10, 0)

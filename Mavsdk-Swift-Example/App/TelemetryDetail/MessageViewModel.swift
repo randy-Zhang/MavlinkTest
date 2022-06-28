@@ -21,11 +21,11 @@ class MessageViewModel: ObservableObject {
                 ProgressHUD.colorAnimation = .systemBlue
                 ProgressHUD.colorProgress = .systemBlue
                 if newValue.contains("Error") {
-                    ProgressHUD.show(newValue)
+                    ProgressHUD.showFailed(newValue)
                 } else {
                     ProgressHUD.showSucceed(newValue)
                 }
-                
+                LogManager.shared.sendOneLog(["content": "execution command \(newValue)"])
             }
             
             timer?.invalidate()
